@@ -1,0 +1,18 @@
+PROYECTO CONTROL Y ANALISIS DE COMPRAS Y FACTURAS
+Datos completamente simulados. Empresa ficticia: Comercial Horizonte.
+
+Copia los tres CSV de Facturas a tu carpeta Facturas y los dos CSV de Maestros a Maestros. Conserva tu Control_Facturas.xlsx existente.
+
+Formato: CSV UTF-8, separador punto y coma. Importa desde Datos > Obtener datos > Desde texto/CSV o Desde una carpeta. No es necesario abrir el CSV con doble clic.
+
+Cada fila de Facturas representa un registro recibido de un documento completo, no una linea de productos. ID_Registro identifica el registro importado, no garantiza que el documento sea unico. La clave de documento debe considerar proveedor, tipo de documento y folio.
+Cada orden de compra del ejercicio autoriza una sola factura. El maestro contiene una fila por orden. Los montos son netos, en pesos chilenos, sin IVA. No representan pagos ni costo de ventas.
+Las fechas de facturas usan dia/mes/año. Los codigos y folios son identificadores de texto.
+
+Los archivos contienen inconsistencias intencionales. Conserva los originales. No elimines registros hasta definir y justificar una regla.
+
+ETAPA 1
+Importar solamente Facturas_2026_07.csv. Revisar encabezados, filas, tipos y calidad. No combinar ni quitar duplicados todavia.
+
+ETAPAS POSTERIORES
+Consolidar meses, normalizar claves, cruzar maestros, registrar excepciones, validar totales y crear analisis. El archivo de un nuevo mes se entregara despues para probar la actualizacion.

@@ -1,0 +1,4 @@
+*.xlsx binary
+*.csv -text
+*.txt -text
+*.md text eol=lf
